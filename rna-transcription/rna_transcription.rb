@@ -5,9 +5,7 @@ class Complement
   def self.of_dna(type)
     letter_array = []
     type.each_char do |letter|
-      if letter == "U"
-        raise(ArgumentError)
-      elsif letter == "C"
+      if letter == "C"
         letter_array << "G"
       elsif letter == "G"
         letter_array << "C"
@@ -24,9 +22,7 @@ class Complement
   def self.of_rna(type)
     letter_array = []
     type.each_char do |letter|
-      if letter == "T"
-        raise(ArgumentError)
-      elsif letter == "C"
+      if letter == "C"
         letter_array << "G"
       elsif letter == "G"
         letter_array << "C"
