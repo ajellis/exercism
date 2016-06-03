@@ -5,6 +5,8 @@ class Raindrops
       return "Pling"
     elsif number % 5 == 0
       return "Plang"
+    elsif number % 7 == 0
+      return "Plong"
     else
     number.to_s
     end
