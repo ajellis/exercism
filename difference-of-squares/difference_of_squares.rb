@@ -11,7 +11,6 @@ end
     (1..@number).each do |n|
       array << n
     end
-    # puts "Your array is #{array}"
     array.each do |j|
       sum = sum + j
     end
